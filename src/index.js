@@ -1,3 +1,22 @@
 import './styles.css';
 
-console.log("Hello");
+export function captitalize() {
+
+}
+
+export function reverseString() {
+
+}
+
+export function calculator() {
+
+}
+
+export function caesarCipher() {
+
+}
+
+captitalize();
+reverseString();
+calculator();
+caesarCipher();
