@@ -6,7 +6,10 @@ export function captitalize(word) {
 }
 
 export function reverseString(word) {
-
+    const wordArray = word.split("");
+    const reversedArray = wordArray.reverse();
+    const reversedWord = reversedArray.join("");
+    return reversedWord;
 }
 
 export function calculator(a, b) {
