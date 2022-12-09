@@ -52,3 +52,21 @@ export function caesarCipher(word, k) {
     const result = encrypt(word.toLowerCase(), k);
     return result;
 }
+
+function findAverage(arr) {
+    let sum = 0;
+    for (const element of arr) {
+        sum += element;
+    }
+    return sum / arr.length;
+}
+
+export function analyzeArray(arr) {
+    const arrayDetails = {
+        average: findAverage(arr),
+        min: Math.min(...arr),
+        max: Math.max(...arr),
+        length: arr.length,
+    }
+    return arrayDetails;
+}
