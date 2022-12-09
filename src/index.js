@@ -33,6 +33,22 @@ export function calculator(a, b, opr) {
     return ans;
 }
 
-export function caesarCipher(word) {
+function encrypt(s, k) {
+    let result = "";
+    const alphabets = "abcdefghijklmnopqrstuvwxyz";
 
+    for (let i = 0; i < s.length; i++) {
+        const codeAtI = (s.charCodeAt(i) - 97);
+        if (codeAtI >= 0 && codeAtI <= 26) {
+            result += alphabets[(codeAtI + k) % 26];
+        } else {
+            result += s.charAt(i);
+        }
+    }
+    return result;
+}
+
+export function caesarCipher(word, k) {
+    const result = encrypt(word.toLowerCase(), k);
+    return result;
 }

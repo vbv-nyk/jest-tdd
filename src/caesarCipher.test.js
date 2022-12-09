@@ -13,5 +13,9 @@ test("caesarCipher: Hello, how are you? 5", () => {
 })
 
 test("caesarCipher: abcdefghijklmnopqrstuvwxyz 18", () => {
-    expect(caesarCipher("abcdefghijklmnopqrstuvwxyz?", 18)).toBe("stuvwxyzabcdefghijklmnopqr");
+    expect(caesarCipher("abcdefghijklmnopqrstuvwxyz", 18)).toBe("stuvwxyzabcdefghijklmnopqr");
+})
+
+test("caesarCipher: KJHASKJDHAKJDHASKJHDASKJ 18", () => {
+    expect(caesarCipher("KJHASKJDHAKJDHASKJHDASKJ", 5)).toBe("pomfxpoimfpoimfxpomifxpo");
 })
