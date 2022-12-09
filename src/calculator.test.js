@@ -15,3 +15,7 @@ test("2 / 1", () => {
 test("1 * 2", () => {
     expect(calculator(1, 2, '*')).toBe(2);
 });
+
+test("1 > 2", () => {
+    expect(calculator(1, 2, '?')).toBe("Invalid Operation");
+});

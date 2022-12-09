@@ -13,7 +13,24 @@ export function reverseString(word) {
 }
 
 export function calculator(a, b, opr) {
-
+    let ans;
+    switch (opr) {
+        case '+':
+            ans = a + b;
+            break;
+        case '-':
+            ans = a - b;
+            break;
+        case '/':
+            ans = a / b;
+            break;
+        case '*':
+            ans = a * b;
+            break;
+        default:
+            ans = "Invalid Operation";
+    }
+    return ans;
 }
 
 export function caesarCipher(word) {
