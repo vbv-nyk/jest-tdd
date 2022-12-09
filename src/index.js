@@ -12,7 +12,7 @@ export function reverseString(word) {
     return reversedWord;
 }
 
-export function calculator(a, b) {
+export function calculator(a, b, opr) {
 
 }
 
