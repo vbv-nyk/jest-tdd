@@ -1,22 +1,18 @@
 import './styles.css';
 
-export function captitalize() {
+export function captitalize(word) {
+    const capitalized = `${word.charAt(0).toUpperCase()}${word.slice(1)}`
+    return capitalized;
+}
+
+export function reverseString(word) {
 
 }
 
-export function reverseString() {
+export function calculator(a, b) {
 
 }
 
-export function calculator() {
+export function caesarCipher(word) {
 
 }
-
-export function caesarCipher() {
-
-}
-
-captitalize();
-reverseString();
-calculator();
-caesarCipher();
